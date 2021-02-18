@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> CabsOnline </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <script type="text/javascript" src="booking.js"> </script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a class="navbar-brand" href="booking.html"> Cabs Online</a>
+  </nav>
+
+  <!-- Form for user input -->
+  <div id="booking_form">
+    <div id="button-group">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons" role="group">
+          <a href="booking.html" class="btn btn-light active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>
+            <img id="button-img" src="car-4-256.png" href="booking.html"> </img> <br> 
+            Book a ride
+          </a>  
+          <a href="admin-page.php" class="btn btn-light" role="button">
+            <input type="radio" name="options" id="option2" autocomplete="off">
+            <img id="button-img" src="administrator-256.png"> </img> <br>
+            Administrator
+          </a>
+      </div>
+    </div>
+    <form class="form-group" id="request_form">
+      <h1> Book a ride now</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <p> <b> Booking Details: </b><br></p>
+          <p> Name: </p> <input type="text" id="booking_name" required>
+          <p> Phone number: </p> <input type="text" id="booking_phone" required>
+          <p> Pick-up Date: </p> <input type="text" id="pick_up_date" required>
+          <p> Pick-up Time: </p> <input type="text" id="pick_up_time" required><br> <br>
+        </div>
+        <div class="col-md-4">
+          <p> <b> Pick-up Address: </b><br></p>
+          <p> Unit/Flat (if applicable) </p> <input type="number" id="booking_unit">
+          <p> Street: </p> <input type="text" id="booking_street" required>
+          <p> Street number: </p> <input type="text" id="booking_street_num" required>
+          <p> Suburb </p> <input type="text" id="booking_suburb" required> <br> <br>
+        </div>
+        <div class="col-md-4">
+          <p> <b> Destination Address: </b><br></p>
+          <p> Unit/Flat (if applicable) </p> <input type="number" id="destination_unit">
+          <p> Street: </p> <input type="text" id="destination_street" required>
+          <p> Street number: </p> <input type="text" id="destination_street_num" required>
+          <p> Suburb </p> <input type="text" id="destination_suburb" required> <br> <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <input class="btn btn-dark" id="submit-button" value="Submit" onclick="submitBooking()" />
+        </div>
+        <div class="col-md-8">
+          <span id="result"> </span>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer section -->
+  <div id="footer">
+    <div class="row">
+      <div class="col-md-4">
+        <br>
+        <p> <b> About this assignment:</b> </p>
+        <p> A cabs booking system and a simple administrator interface.</p>
+      </div>
+      <div class="col-md-4">
+        <br>
+        <p> <b> Technologies used: </b> </p>
+        <p> PHP, JavaScript, MySQL (via Amazon RDS), Amazon EC-2, Bootstrap</p>
+      </div>
+      <div class="col-md-4">
+        <br>
+        <p> <b> Student Authencity Declaration: </b> </p>
+        <p>I declare that this assignment is my individual work. <br>
+          I have not worked collaboratively nor have I copied from
+          any other students' work or from any other source.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+// To make table
+CREATE TABLE cabs_booking(
+            booking_id int AUTO_INCREMENT PRIMARY KEY,
+            booking_name varchar(40),
+            booking_phone varchar(40),
+            booking_unit varchar(10),
+            booking_street varchar(40),
+            booking_street_num int,
+            booking_suburb varchar(40),
+            pick_up_date varchar(20),
+            pick_up_time varchar(20),
+            destination_unit varchar(10),
+            destination_street varchar(40),
+            destination_street_num int,
+            destination_suburb varchar(40),
+            booking_date varchar(20),
+            booking_time varchar(20),
+            booking_status varchar(20)
+);
+
+
+// To clear table and reset primary key increment
+TRUNCATE TABLE cabs_booking;

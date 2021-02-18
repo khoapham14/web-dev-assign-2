@@ -1,0 +1,120 @@
+/* Global Styles */
+body{
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left:0;
+    margin-right:0;
+}
+
+.container{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left:0;
+    margin-right:0;
+}
+
+/* Mav Styles */
+.navbar{
+    background-color: black;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.navbar-brand:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    color:white;
+}
+
+/* Button Group */
+.btn-light{
+    height: 110px;
+    width: 20vw;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn-light:hover{
+    background-color: lightgrey;
+}
+
+#button-group{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#button-img{
+    height: 60px;
+    width: 60px;
+}
+
+#radio-group-text{
+    color: black;
+}
+
+
+/* Booking form styles */
+#booking_form{
+    background-image: url("budget_uber_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 1.5%;
+}
+
+
+#request_form{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color: white;
+    width: 60vw;
+    min-width: 700px;
+    padding: 2% 2% 2% 2%;
+}
+
+#submit-button{
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+}
+
+/* Admin Page styles */
+#admin_form{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color: white;
+    width: 60vw;
+    min-width: 720px;
+    padding: 2% 2% 2% 2%;
+    margin-bottom: 10%;
+}
+
+#admin_header{
+    padding-bottom: 5%;
+}
+
+#tr{
+    border: 1px solid black;
+}
+
+/* Footer */
+#footer{
+    padding-top: 10%;
+    background-color: black;
+    color: white;
+    height: 25vh;
+    padding: 2% 2% 2% 2%;
+}
+
+
+
